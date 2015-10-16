@@ -1,0 +1,243 @@
+
+<!-- Parallax Effect -->
+<script type="text/javascript">$(document).ready(function(){$('#parallax-pagetitle').parallax("50%", -0.55);});</script>
+
+<section class="parallax-effect">
+  <div id="parallax-pagetitle" style="background-image: url(/static/images/parallax/parallax-01.jpg);">
+    <div class="color-overlay"> 
+      <!-- Page title -->
+      
+     </div>
+  </div>
+</section>
+<div class="container">
+  <div class="row"> 
+    <!-- Slider -->
+
+   <section class="room-slider standard-slider mt50">
+      <div class="col-sm-12 col-md-8">
+        <img src="static/images/gallery/room.jpg" class="img-responsive" alt="" />     
+      </div>
+    </section>
+    
+    <!-- Reservation form -->
+    <section id="reservation-form" class="mt50 clearfix">
+      <div class="col-sm-12 col-md-4">
+        <form class="reservation-vertical clearfix" role="form" method="post" name="reservationform" id="reservationform">
+          <h2 class="lined-heading"><span>Reservation</span></h2>
+          <div id="message"></div>
+          <!-- Error message display -->
+          <div class="form-group">
+            <label for="email" accesskey="E">E-mail</label>
+            <input name="email" type="text" id="rooms-email" value="" class="form-control" placeholder="Please enter your E-mail"/>
+          </div>
+          <div class="form-group">
+              <label for="room">Room Type</label>
+              <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."> <i class="fa fa-info-circle fa-lg"> </i> </div>
+              <select class="form-control" name="room" id="rooms-room">
+                <option selected="selected" disabled="disabled">Select a room</option>
+                <option value="Share">Share room</option>
+                <option value="Single">Single room</option>
+                <option value="Double">Double Room</option>
+              </select>
+          </div>
+          
+
+
+          <div class="form-group">
+            <select class="hidden" name="room" id="rooms-room">
+              <option selected="selected">Double Room</option>
+            </select>
+          </div>
+          <div class="form-group">
+              <label for="checkin">Check-in</label>
+              <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Check-In is from 11:00"> <i class="fa fa-info-circle fa-lg"> </i> </div>
+              <i class="fa fa-calendar infield"></i>
+              <input name="checkin" type="text" id="rooms-checkin" value="" class="form-control" placeholder="Check-in"/>
+          </div>
+          <div class="form-group">
+              <label for="checkout">Check-out</label>
+              <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Check-out is from 12:00"> <i class="fa fa-info-circle fa-lg"> </i> </div>
+              <i class="fa fa-calendar infield"></i>
+              <input name="checkout" type="text" id="rooms-checkout" value="" class="form-control" placeholder="Check-out"/>
+            </div>
+          <div class="form-group">
+            <label>Guests</label>
+            <input name="guests" type="number" id="rooms-guests" value="1" class="form-control"/>
+          </div>
+
+          <button type="submit" id="rooms-booknow-btn" class="btn btn-primary btn-block">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    
+    <!-- Room Content -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7 mt50">
+            <h2 class="lined-heading"><span>Room Details</span></h2>
+            <h3 class="mt50">Table overview</h3>
+            <table class="table table-striped mt30">
+              <tbody>
+                <tr>
+                  <td><i class="fa fa-check-circle"></i> Cable TV</td>
+                  <td><i class="fa fa-check-circle"></i> Free Internet</td>
+                  <td><i class="fa fa-check-circle"></i> Free Newspaper</td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-check-circle"></i> 2 persons</td>
+                  <td><i class="fa fa-check-circle"></i> 4 persons</td>
+                  <td><i class="fa fa-check-circle"></i> 6 persons</td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-check-circle"></i> Double Bed</td>
+                  <td><i class="fa fa-check-circle"></i> Hairdryer</td>
+                  <td><i class="fa fa-check-circle"></i> Breakfast included</td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-check-circle"></i> Private Bathrooms</td>
+                  <td><i class="fa fa-check-circle"></i> Flat Screen TV</td>
+                  <td><i class="fa fa-check-circle"></i> AC</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="mt50">Q' Tuanis offers top service and quality rooms surrounded by a beautiful scenery at the best price.</p>
+          </div>
+          <div class="col-sm-5 mt50">
+            <h2 class="lined-heading"><span>Overview</span></h2>
+            
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
+              <li><a href="#facilities" data-toggle="tab">Facilities</a></li>
+              <li><a href="#extra" data-toggle="tab">Extra</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane fade in active" id="overview">
+                <p>Surrounded by nature, at only 5 minutes from Manuel Antonio National Park, Q' Tuanis hostal offers a quiet and safe place to spend your vacation.</p>
+               
+              </div>
+              <div class="tab-pane fade" id="facilities"> 24 hour parking for up to 40 vehicles, Free WiFi,  A/C in all Rooms, Breakfast included, Coffee shop. 
+              </div>
+              <div class="tab-pane fade" id="extra">Manuel Antonio, Costa Rica tours and activities listing, a guide of excursions available while traveling in Manuel Antonio.
+              Zip Lines Hiking  Guided Tours
+              Rafting Catamaran Tour  Mangrove Tours</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+
+
+
+<!-- Other Rooms -->
+<section class="rooms mt50">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="lined-heading"><span>Other rooms</span></h2>
+      </div>
+
+      <!-- Share Room -->
+      <div class="col-sm-4">
+        <div class="room-thumb"> <img src="/static/images/rooms/room-03.jpg" alt="room 2" class="img-responsive" />
+          <div class="mask">
+            <div class="main">
+             <h5>Share room</h5>
+              <div class="price">$ 25 <span>a night (max 6 guests)</span></div>
+            </div>
+            <div class="content">
+              <p><p>This is our budget option, perfect for backpackers. Book a bed at this spacious cabin surrounded by our beautiful garden and the sounds of nature.  </p></p>
+              <div class="row">
+                <div class="col-xs-6">
+                  <ul class="list-unstyled">
+                    <li><i class="fa fa-check-circle"></i> Incl. breakfast</li>
+                    <li><i class="fa fa-check-circle"></i> Private balcony</li>
+                    <li><i class="fa fa-check-circle"></i> Sea view</li>
+                  </ul>
+                </div>
+                <div class="col-xs-6">
+                  <ul class="list-unstyled">
+                   <li><i class="fa fa-check-circle"></i> Free Wi-Fi</li>
+                    <li><i class="fa fa-check-circle"></i> Incl. breakfast</li>
+                    <li><i class="fa fa-check-circle"></i> Bathroom</li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single Room -->
+      <div class="col-sm-4">
+        <div class="room-thumb"> <img src="/static/images/rooms/room-01.jpg" alt="room 3" class="img-responsive" />
+          <div class="mask">
+            <div class="main">
+              <h5>Single room</h5>
+              <div class="price"> $75 <span>a night (max 2 guests)</span></div>
+            </div>
+            <div class="content">
+              <p><p>One of our bungalows, surrouded by nature, the Single Room is spacious and cozy. It's equipped with a queen size bed which makes it the perfect option for couples or a single guest who loves comfort.  
+                </p></p>
+              <div class="row">
+                <div class="col-xs-6">
+                  <ul class="list-unstyled">
+                    <li><i class="fa fa-check-circle"></i> Incl. breakfast</li>
+                    <li><i class="fa fa-check-circle"></i> Fridge</li>
+                    <li><i class="fa fa-check-circle"></i> Cable TV </li>
+                  </ul>
+                </div>
+                <div class="col-xs-6">
+                  <ul class="list-unstyled">
+                    <li><i class="fa fa-check-circle"></i> Free Wi-Fi</li>
+                    <li><i class="fa fa-check-circle"></i> AC</li>
+                    <li><i class="fa fa-check-circle"></i> Bathroom</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Doble Room -->
+      <div class="col-sm-4">
+        <div class="room-thumb"> <img src="/static/images/rooms/room-02.jpg" alt="room 1" class="img-responsive" />
+          <div class="mask">
+            <div class="main">
+              <h5>Double bedroom</h5>
+              <div class="price"> $95 <span>a night  (max 4 guests) </span></div>
+            </div>
+            <div class="content">
+               <p> If you are vacationing with your family or a group of friends this is your best option. The Double Room is a nice and  spacious bungalow. This room has a queen size bed and  a bunk bed </p>
+              <div class="row">
+                <div class="col-xs-6">
+                  <ul class="list-unstyled">
+                    <li><i class="fa fa-check-circle"></i> Incl. breakfast</li>
+                    <li><i class="fa fa-check-circle"></i> Private balcony</li>
+                    <li><i class="fa fa-check-circle"></i> Sea view</li>
+                  </ul>
+                </div>
+                <div class="col-xs-6">
+                  <ul class="list-unstyled">
+                   <li><i class="fa fa-check-circle"></i> Free Wi-Fi</li>
+                    <li><i class="fa fa-check-circle"></i> Incl. breakfast</li>
+                    <li><i class="fa fa-check-circle"></i> Bathroom</li>
+                  </ul>
+                </div>
+              </div>
+             </div>
+          </div>
+        </div>
+      </div>   
+    </div>
+  </div>
+</section>

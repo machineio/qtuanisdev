@@ -1,0 +1,63 @@
+<!-- Reservation form -->
+<section id="reservation-form">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">         
+        <form class="form-inline reservation-horizontal clearfix" role="form" method="post" action="php/reservation.php" name="reservationform" id="reservationform">
+        <!-- Error message -->
+        <div id="message"></div>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label for="email" accesskey="E">E-mail</label>
+                <input name="email" type="text" id="email" value="" class="form-control" placeholder="Please enter your E-mail"/>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="form-group">
+                <label for="room">Room Type</label>
+                <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."> <i class="fa fa-info-circle fa-lg"> </i> </div>
+                <select class="form-control" name="room" id="room">
+                  <option selected="selected" disabled="disabled">Select a room</option>
+                  <option value="Share">Share room</option>
+                  <option value="Single">Single room</option>
+                  <option value="Double">Double Room</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="form-group">
+                <label for="checkin">Check-in</label>
+                <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Check-In is from 11:00"> <i class="fa fa-info-circle fa-lg"> </i> </div>
+                <i class="fa fa-calendar infield"></i>
+                <input name="checkin" type="text" id="checkin" value="" class="form-control" placeholder="Check-in"/>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="form-group">
+                <label for="checkout">Check-out</label>
+                <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Check-out is from 12:00"> <i class="fa fa-info-circle fa-lg"> </i> </div>
+                <i class="fa fa-calendar infield"></i>
+                <input name="checkout" type="text" id="checkout" value="" class="form-control" placeholder="Check-out"/>
+              </div>
+            </div>
+            <div class="col-sm-1">
+              <div class="form-group">
+                <label>Guests</label>
+                <input name="guests" type="number" id="guests" value="1" class="form-control"/>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <button id="booknow-btn" type="submit" class="btn btn-primary btn-block">Book Now</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</section>
+
