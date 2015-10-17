@@ -176,7 +176,7 @@
 
 <!-- Other Rooms -->
 <section class="rooms mt50">
-  <div class="container">
+  <div class="container ">
     <div class="row">
       <div class="col-sm-12">
         <h2 class="lined-heading"><span>Other rooms</span></h2>
@@ -184,9 +184,15 @@
 
       <!-- Share Room -->
       <div class="col-sm-4">
-        <div class="room-thumb"> <img src="/static/images/rooms/room-03.jpg" alt="room 2" class="img-responsive" />
+        <div class="room-thumb carousel slide" data-ride="carousel"> <img src="/static/images/rooms/room-03.jpg" alt="room 2" class="img-responsive" />
           <div class="mask">
             <div class="main">
+            <ol class="carousel-indicators">
+           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+           <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+             </ol>
+
              <h5>Share room</h5>
               <div class="price">$ 25 <span>a night (max 6 guests)</span></div>
             </div>
